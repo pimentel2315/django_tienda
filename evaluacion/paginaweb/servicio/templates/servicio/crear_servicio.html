@@ -1,0 +1,21 @@
+{% extends 'index.html' %}
+
+
+
+{% block body %}
+{{ form.as_p }}
+
+            <h2 class="modal-title">Creacion de Productos</h2>
+        </div>
+        <form action="{% url 'servico:crear_servicio' %}" method="POST">
+            
+                {{ form.as_p }}
+            </div>
+            
+                <button class="btn btn-danger" type="button" ">Cancelar</button>
+                <button id="boton_creacion" class="btn btn-primary" type="button" onclick="registrar();" >Confirmar</button>
+            
+        </form>
+    </div>
+</div>
+{% endblock body %}

@@ -1,0 +1,22 @@
+{% extends "ProyectoWebApp/base.html" %}
+
+{% block titulo %}   
+
+{% endblock titulo %}
+
+{% block content %}
+    <h2 >Creacion de Productos</h2>
+        
+        <form action ="crear_servicio" method="POST"> 
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button id="boton_creacion" class="btn btn-primary" type="submit"  >Confirmar</button>
+
+        </form>
+          
+    
+
+
+                
+                
+{% endblock content %}
